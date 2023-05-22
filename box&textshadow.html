@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow&text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        /* border: 2px solid red;*/
+        margin: 23px 12px;
+        background-color: burlywood;
+        /*box-shadow: -10px -13px green;*/
+        /*box-shadow: 7px 5px 10px 34px green;*/
+        /*box-shadow: 7px 5px 10px  green;*/
+        /* box-shadow: offset-x offset-y color;
+        box-shadow: offset-x offset-y  blur-radius color;
+        box-shadow: offset-x offset-y  blur-radius  spread-radius color;*/
+        /*box-shadow: -7px -5px 0px 34px rgba(70, 124, 132, 0.5);*/
+        box-shadow: inset 3px 5px green;
+        box-shadow: 3px 5px green, 4px 6px red;
+    }
+
+    h2 {
+        /*text-shadow: 3px 4px red;*/
+        /*text-shadow: 3px 2px 2px white;*/
+        text-shadow: -3px -2px 2px white;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card " id="card-1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Architecto animi tempora adipisci non aspernatur, modi tenetur qui, minus dolorem temporibus
+                consectetur.
+                Illum ullam ex quis hic. Sunt sint possimus harum?</p>
+        </div>
+        <div class="card " id="card-2">
+            <h2> card2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta suscipit
+                sed adipisci deserunt harum alias delectus! Debitis iusto hic recusandae earum numquam placeat ullam
+                quasi tempore eius id. Veritatis, eligendi.</p>
+        </div>
+        <div class="card " id="card-3">
+            <h2> card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus illo dolor
+                praesentium magni delectus repellat provident maxime, et dignissimos.
+                Debitis saepe sed neque tempore ab odit facere libero, id perspiciatis.</p>
+        </div>
+    </div>
+</body>
+
+</html>
